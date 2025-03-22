@@ -30,13 +30,13 @@
                                 <a class="nav-link" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="cart.html">Cart</a>
+                                <a class="nav-link" href="cart.html">Cart</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="discover.html">Discover</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="login.html">Account</a>
+                                <a class="nav-link active" href="login.html">Account</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="forgot.html">Forgot Password?</a>
@@ -51,53 +51,33 @@
     <!-- header End -->
     <!-- banner start -->
 
-    <section class="cart">
+    <section class="login">
         <div class="container">
-            <div class="row mt-5">
-                <p class="h2 fontHeavy">Shopping Cart</p>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb mt-2 mb-5">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Shopping Cart</li>
-                    </ol>
-                </nav>
-                <hr class="my-3">
-                <div class="col-lg-7 col-12 row">
-                    <div class="d-flex row align-items-center justify-content-between">
-                        <div class="d-flex col-lg-8 col-12">
-                            <img src="assets/images/cartImg.webp" class="img-fluid cartImg img-thumbnail m-auto p-0" alt="">
-                            <div class="cartContent m-auto fontHeavy">
-                                Classic Leather Jacket
-                                <span class="font-thin mb-2 d-block">Red / S</span>
-                                <span class="rounded-pill border font-thin px-3 py-1"> <i class="fa-solid fa-check"></i> In Stock</span>
-                            </div>
-                        </div>
-
-
-                        <div class="rangeSelector rounded d-flex col-lg-2 col-6 m-auto my-3 align-items-center py-2 justify-content-evenly border">
-                            <i class="fa-solid fa-minus px-3"></i>
-                            1
-                            <i class="fa-solid fa-plus px-3"></i>
-                        </div>
-
-
-                        <div><span class="priceButton d-flex col-lg-2 col-6 m-auto my-3 p-2  rounded">$80.00</span></div>
-
-                    </div>
-
+            <p class="h5 mt-5"> Don't have an account. <span class="opacity-50">Create one!</span></p>
+            <p class="h1 my-5"> SignIn. <span class="opacity-50">Connect with us.</span></p>
+            <div class="col-lg-6 col-12 rounded-5 bg-light p-5 m-auto mb-5">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username *"
+                        aria-describedby="basic-addon1">
                 </div>
-                <div class="col-lg-4 col-12 subtotal position-relative m-auto">
-                    <div class="p-5">
-                        <div class="d-flex justify-content-between">
-                            <span class="fontHeavy">Subtotal</span>
-                            <span class="fontHeavy">$80.00</span>
-                        </div>
-                        <p class="font-thin">Shipping, discounts, will be calculated at checkout.</p>
-                        <a href="checkout.html" class="text-white fontHeavy bg-black px-5 p-3 d-flex rounded-pill">Checkout</a>
-
-                    </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email *">
+                  </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password *" required>
                 </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm password *" required>
+                </div>
+
+                
+                <button type="submit" class="p-3 px-5 rounded-pill bg-black text-white border-0">Submit</button>
+                <span class="pt-3 ps-5 createAccoBtn ">Already have an accuont? <a href="login.html" class="text-primary text-decoration-underline link-offset-1">Login</a></span>
             </div>
+
+
+
         </div>
     </section>
 
@@ -251,6 +231,7 @@
             </div>
         </div>
     </footer>
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 

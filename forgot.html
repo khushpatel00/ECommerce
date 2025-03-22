@@ -39,7 +39,7 @@
                                 <a class="nav-link" href="login.html">Account</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="forgot.html">Forgot Password?</a>
+                                <a class="nav-link active" href="forgot.html">Forgot Password?</a>
                             </li>
 
                         </ul>
@@ -50,160 +50,35 @@
     </header>
     <!-- header End -->
     <!-- banner start -->
-    <section class="atCart my-5">
+
+    <section class="login">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-12">
-                    <div class="orderInfo bg-light p-3 rounded-4">
-                        <div class="paypalExpress text-center">
-                            <div class="alert alert-danger" role="alert">
-                                <i class="fa-solid fa-exclamation"></i> There was an issue with PayPal. Try again or use
-                                a different payment method.
-                            </div>
-                            <p class="h6 font-thin mt-5">Express Checkout</p>
-                            <img src="assets/images/Paypal.png" class="img-fluid px-4 bg-warning rounded"
-                                style="max-width: 30%;" alt="PayPal">
-
-                        </div>
-                        <div class="text-center">
-                            <p class="breaker mt-5">OR</p>
-                        </div>
-                        <form>
-                            <span class="py-4 h3 me-auto d-flex">Contact</span>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Email <span
-                                        class="text-danger">*</span> </label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="name@example.com" required>
-                            </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Email me with news and
-                                    offers</label>
-                            </div>
-                            <span class="py-4 h3 me-auto d-flex">Delivery</span>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label for="inputPassword4" class="form-label">First Name <span
-                                            class="text-danger">*</span> </label>
-                                    <input type="text" class="form-control" id="inputText" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="inputPassword4" class="form-label">Last Name (optional)</label>
-                                    <input type="text" class="form-control" id="inputText">
-                                </div>
-                                <div class="col-12">
-                                    <label for="inputAddress" class="form-label">Address <span
-                                            class="text-danger">*</span> </label>
-                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"
-                                        required>
-                                </div>
-                                <div class="col-12">
-                                    <label for="inputAddress2" class="form-label">Address 2 <span
-                                            class="text-danger">*</span> </label>
-                                    <input type="text" class="form-control" id="inputAddress2"
-                                        placeholder="Apartment, studio, or floor" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="inputCity" class="form-label">City <span class="text-danger">*</span>
-                                    </label>
-                                    <input type="text" class="form-control" id="inputCity" required>
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="inputState" class="form-label">State <span class="text-danger">*</span>
-                                    </label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="col-md-2">
-                                    <label for="inputZip" class="form-label">Zip <span class="text-danger">*</span>
-                                    </label>
-                                    <input type="text" class="form-control" id="inputZip" required>
-                                </div>
-
-
-                            </div>
-
-
-                            <span class="py-4 h3 me-auto d-flex">Payment</span>
-                            <span class="py-4 h5 font-thin me-auto d-flex">All transactions are secure and
-                                encrypted</span>
-                            <div class="creditCard rounded-3 bg-light px-3">
-                                <div class="cardSelection d-flex justify-content-between">
-                                    <div>
-                                        <input type="radio" name="" checked class="m-3" id=""> Credit Card
-                                    </div>
-                                    <img src="assets/images/credit.svg" class="img-fluid" alt="">
-
-                                </div>
-                                <div class="col-12">
-                                    <label for="exampleFormControlInput1" class="form-label"></label>
-                                    <input type="text" class="form-control p-3" id="exampleFormControlInput1"
-                                        placeholder="* Card number " required>
-                                </div>
-                                <div class="row">
-                                    <div class=" col-md-6 col-12">
-                                        <label for="exampleFormControlInput1" class="form-label"></label>
-                                        <input type="text" class="form-control p-3" id="exampleFormControlInput1"
-                                            placeholder="* Expiration date (MM / YY)" required>
-                                    </div>
-                                    <div class=" col-md-6 col-12">
-                                        <label for="exampleFormControlInput1" class="form-label"></label>
-                                        <input type="password" maxlength="3" class="form-control p-3"
-                                            id="exampleFormControlInput1" placeholder="* Security Code (CVV)" required>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <label for="exampleFormControlInput1" class="form-label"></label>
-                                    <input type="text" class="form-control p-3" id="exampleFormControlInput1"
-                                        placeholder="Name On Card">
-                                </div>
-                                <input type="radio" name="" checked class="m-3 my-5" id=""> Use shipping address as
-                                billing address
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="button bg-black text-white p-2 px-3 text-decoration-none rounded-pill d-inline-block mt-2">Pay Now</button>
-                                
-                                
-                                
-                            </div>
-                        </form>
-                        <button class="button bg-black text-white p-2 px-3 text-decoration-none rounded-pill d-inline-block mt-2" id="liveAlertBtn">Skip/Finish</button>
-                        <div id="liveAlertPlaceholder" class="mt-3"></div>
-
-                    </div>
+            <p class="h1 my-5"> Forgot Password. </p>
+            <div class="col-lg-6 col-12 rounded-5 bg-light p-5 m-auto mb-5">
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email *"
+                        required>
                 </div>
-                <div class="col-lg-6 col-12 checkoutDetails rounded-4">
-                    <div class="d-flex justify-content-between">
-                        <div class="d-flex">
-                            <img src="assets/images/cartImg.webp" class="img-fluid img-thumbnail d-flex p-0 m-3 mt-4"
-                                style="max-width: 15%;" alt="">
-                            <div class="mt-4">
-                                Classic Leather Jacket
-                                <span class="font-thin h6 d-block">Red / S</span>
-                            </div>
-                        </div>
-                        <span class="mt-4">$80.00</span>
-                    </div>
-                    <div class="d-flex ms-3 justify-content-between">
-                        Subtotal
-                        <span class="font-thin">$80.00</span>
-                    </div>
-                    <div class="d-flex ms-3 justify-content-between">
-                        Shipping
-                        <span class="font-thin">As per your shipping address</span>
-                    </div>
-                    <div class="d-flex justify-content-between mt-4">
-                        <span class="h5 ms-3 d-flex">Total</span>
-                        <div>
-                            <span class="font-thin mt-4">USD</span>
-                            <span class="h5 mt-4">$80.00</span>
-                        </div>
-                    </div>
-
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username *"
+                        aria-describedby="basic-addon1">
                 </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Last password">
+                </div>
+
+                <button id="liveAlertBtn" class="pt-3 createAccoBtn border-0 bg-transparent d-block">Want a phone call?</button>
+                <div id="liveAlertPlaceholder"></div>
+                <button type="submit" class="p-3 px-5 rounded-pill bg-black text-white border-0">Submit</button>
+                <span class="pt-3 ps-5 createAccoBtn ">Go back to <a href="login.html"
+                        class="text-primary text-decoration-underline link-offset-1">Login </a></span>
             </div>
-    </section>
 
+
+
+        </div>
+    </section>
 
 
 
@@ -219,7 +94,7 @@
                             style="background-image: url(assets/images/discoverImg1.png);">
                             <span class="font-thin ">Collection</span>
                             <p class="h3 ">Up to 80% off <br> retail</p>
-                            <a href="#"
+                            <a href="productDetail.html"
                                 class="button bg-black text-white p-3 px-5 text-decoration-none rounded-pill d-inline-block mt-5 m-2">
                                 See Collection
                             </a>
@@ -231,7 +106,7 @@
                             style="background-image: url(assets/images/discoverImg2.png);">
                             <span class="font-thin ">Collection</span>
                             <p class="h3 ">Give the gift <br> of choice</p>
-                            <a href="#"
+                            <a href="productDetail.html"
                                 class="button bg-black text-white p-3 px-5 text-decoration-none rounded-pill d-inline-block mt-5 m-2">
                                 See Collection
                             </a>
@@ -243,7 +118,7 @@
                             style="background-image: url(assets/images/discoverImg3.png);">
                             <span class="font-thin ">Collection</span>
                             <p class="h3 ">The latest from<br> top brands</p>
-                            <a href="#"
+                            <a href="productDetail.html"
                                 class="button bg-black text-white p-3 px-5 text-decoration-none rounded-pill d-inline-block mt-5 m-2">
                                 See Collection
                             </a>
@@ -255,7 +130,7 @@
                             style="background-image: url(assets/images/discoverImg4.png);">
                             <span class="font-thin ">Collection</span>
                             <p class="h3 ">Beauty Collection</p>
-                            <a href="#"
+                            <a href="productDetail.html"
                                 class="button bg-black text-white p-3 px-5 text-decoration-none rounded-pill d-inline-block mt-5 m-2">
                                 See Collection
                             </a>
@@ -267,7 +142,7 @@
                             style="background-image: url(assets/images/maylike1.png);">
                             <span class="font-thin ">Collection</span>
                             <p class="h3 ">Up to 80% off <br> retail</p>
-                            <a href="#"
+                            <a href="productDetail.html"
                                 class="button bg-black text-white p-3 px-5 text-decoration-none rounded-pill d-inline-block mt-5 m-2">
                                 See Collection
                             </a>
@@ -279,7 +154,7 @@
                             style="background-image: url(assets/images/maylike2.png);">
                             <span class="font-thin ">Collection</span>
                             <p class="h3 ">Give the gift <br> of choice</p>
-                            <a href="#"
+                            <a href="productDetail.html"
                                 class="button bg-black text-white p-3 px-5 text-decoration-none rounded-pill d-inline-block mt-5 m-2">
                                 See Collection
                             </a>

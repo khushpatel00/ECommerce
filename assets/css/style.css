@@ -73,9 +73,11 @@ i:hover {
 }
 
 .arrivalImg .img-fluid {
-  height: 60vh;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.mayAlso .discoverCard{
+  background-size: 140%
 }
 .product-img{
   background-color: #dadada93;
@@ -146,16 +148,8 @@ p.breaker::before {
 .fontHeavy{
   font-weight: 700 !important;
 }
-.subtotal{
-  position: relative;
+.cartContent{
+  font-size: clamp(20px, unset, 100px) !important;
 }
-.subtotal::after{
-  position: absolute;
-  content: '';
-  box-sizing: border-box;
-  width: 0.5px;
-  height: 100%;
-  top: 0;
-  background-color: black;
-}
+
 /* header end */

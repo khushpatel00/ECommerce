@@ -2,6 +2,20 @@
     .subtotal::after{
         width: 0;
     }
+
+    .cartContent{
+        display: block !important;
+    }
+    .cartImg{
+        display: block !important;
+        width: 30% !important;
+      }
+      .createAccoBtn{
+        display: block;
+    }
+    .mayAlso, .likings{
+      display: unset !important;
+    }
 }
 
 @media (min-width:576px) {
@@ -9,6 +23,21 @@
 }
 
 @media (min-width:768px) {
+    .subtotal::after{
+        position: absolute;
+        content: '';
+        box-sizing: border-box;
+        width: 0.5px;
+        height: 100%;
+        top: 0;
+        background-color: black;
+      }
+      .cartImg{
+        max-width: 30% !important;
+      }
+      .mayAlso, .likings {
+        display: flex !important;
+      }
 
 }
 
